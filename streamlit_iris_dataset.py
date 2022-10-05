@@ -24,7 +24,7 @@ hist_values = np.histogram(data['sepal_length'])[0]
 st.bar_chart(hist_values)
 
 st.subheader("Sepal_width")
-bins =  st.slider('bin', 2, 30, 17)
+b =  st.slider('bin', 2, 30, 17)
 hist_values = np.histogram(data['sepal_width'],bins=bins)[0]
 st.bar_chart(hist_values)
 
@@ -36,7 +36,7 @@ st.bar_chart(hist_values)
 
 
 st.subheader("Petal_width")
-bins =  st.slider('bin', 4, 30, 17)
+bin =  st.slider('bin', 4, 30, 17)
 hist_values = np.histogram(data['petal_width'])[0]
 st.bar_chart(hist_values)
 
