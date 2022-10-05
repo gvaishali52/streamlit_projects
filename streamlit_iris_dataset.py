@@ -19,7 +19,7 @@ if st.checkbox('Show raw data'):
 
 
 st.subheader("Sepal_length")
-bins =  st.slider('bin', 1, 30, 17)
+bi =  st.slider('bin', 1, 30, 17)
 hist_values = np.histogram(data['sepal_length'])[0]
 st.bar_chart(hist_values)
 
