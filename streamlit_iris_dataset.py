@@ -20,23 +20,23 @@ if st.checkbox('Show raw data'):
 
 st.subheader("Sepal_length")
 bi =  st.slider('bin', 1, 30, 17)
-hist_values = np.histogram(data['sepal_length'])[0]
+hist_values = np.histogram(data['sepal_length'],bins =bi)[0]
 st.bar_chart(hist_values)
 
 st.subheader("Sepal_width")
 b =  st.slider('bin', 2, 30, 17)
-hist_values = np.histogram(data['sepal_width'],bins=bins)[0]
+hist_values = np.histogram(data['sepal_width'],bins =b)[0]
 st.bar_chart(hist_values)
 
 
 st.subheader("Petal_length")
 bins =  st.slider('bin', 3, 30, 17)
-hist_values = np.histogram(data['petal_length'])[0]
+hist_values = np.histogram(data['petal_length'],bins =bins)[0]
 st.bar_chart(hist_values)
 
 
 st.subheader("Petal_width")
 bin =  st.slider('bin', 4, 30, 17)
-hist_values = np.histogram(data['petal_width'])[0]
+hist_values = np.histogram(data['petal_width'],bins =bin)[0]
 st.bar_chart(hist_values)
 
