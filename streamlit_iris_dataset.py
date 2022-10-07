@@ -40,3 +40,7 @@ bin =  st.slider('bin', 4, 30, 17)
 hist_values = np.histogram(data['petal_width'],bins =bin)[0]
 st.bar_chart(hist_values)
 
+
+st.subheader("boxplot")
+st.boxplot(y="petal_length",data=iris)
+plt.show()
